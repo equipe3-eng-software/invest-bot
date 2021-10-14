@@ -15,7 +15,7 @@ class StartController extends TelegramBaseController {
                 },
                 'Ver recomendações': () => {
                     oneTimeKeyboard: true,
-                    $.sendMessage(`Seu perfil foi definido como: Conservador`)
+                    $.sendMessage(`Start`)
                 },
                 'Ajuda': () => {
                     oneTimeKeyboard: true,
