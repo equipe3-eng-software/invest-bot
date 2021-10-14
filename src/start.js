@@ -4,8 +4,29 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class StartController extends TelegramBaseController {
     startHandler($) {
-        $.sendMessage('Olá @, eu sou o InvestBot, te ajudo a investir melhor, o que vc quer fazer?')
-        $.sendMessage('Para definir seu perfil de investidor, digite /profile') //add lista de comandos aqui
+
+        $.runMenu({
+            message: 'Olá, eu sou o InvestBot, te ajudo a investir melhor, vamos começar?',
+            oneTimeKeyboard: true,
+
+                'Definir Perfil': () => {
+                    oneTimeKeyboard: true,
+                    $.sendMessage(`Definir`)
+                },
+                'Ver recomendações': () => {
+                    oneTimeKeyboard: true,
+                    $.sendMessage(`Seu perfil foi definido como: Conservador`)
+                },
+                'Ajuda': () => {
+                    oneTimeKeyboard: true,
+
+                    $.sendMessage('Ajuda!')
+                },
+                
+            'anyMatch': () => { 
+                $.sendMessage('What?')
+            }
+        })
     }
 
     get routes() {

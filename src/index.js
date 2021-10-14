@@ -12,6 +12,7 @@ const StartController = require('./start'),
     
 chatbot.router.when(new Telegram.TextCommand('/start', 'startCommand'), new StartController())
     .when(new Telegram.TextCommand('/setProfile', 'profileCommand'),new ProfileController())
+    // .when(new Telegram.TextCommand('/profile', 'viewProfileCommand'),new ProfileController())
     .when(new Telegram.TextCommand('/today', 'todayCommand'), new TodayController())
     .when(new Telegram.TextCommand('/news', 'newsCommand'), new NewsController())
 

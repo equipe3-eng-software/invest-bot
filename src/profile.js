@@ -5,15 +5,6 @@ const TelegramBaseController = Telegram.TelegramBaseController
 class ProfileController extends TelegramBaseController {
     profileHandler($) {
         let profile = $.message.text
-        // let profile = $.message.text.split(' ').slice(1).join(' ')
-        // if (!profile) return $.sendMessage('Sorry, ...')
-
-        // $.getUserSession('investProfile').then(investProfile => {
-        //     if (!Array.isArray(investProfile)) return $.setUserSession('investProfile', profile)
-        //     else $.setUserSession('investProfile', profile)
-        // })
-        // let message = `Seu perfil foi definido como: ${profile}`
-        // $.sendMessage(message)
         $.runMenu({
             message: 'Selecione perfil:',
             oneTimeKeyboard: true,
@@ -49,9 +40,19 @@ class ProfileController extends TelegramBaseController {
         })
     }
 
+    profileViewer($) {
+        $.getUserSession('investProfile').then(investProfile => {
+            let message
+            if (!Array.isArray(investProfile)) message = 'empty'
+            else message = $.getUserSession('investProfile')
+              $.sendMessage(message) 
+         })
+    }
+
     get routes() {
         return {
-            'profileCommand': 'profileHandler'
+            'profileCommand': 'profileHandler',
+            'viewProfileCommand': 'profileViewer'
         }
     }
 }
