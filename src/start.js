@@ -4,7 +4,7 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class StartController extends TelegramBaseController {
     startHandler($) {
-        let message = `Olá @, eu sou o InvestBot, te ajudo a investir melhor, o que vc quer fazer?
+        let message = `Olá, eu sou o InvestBot e te ajudo a investir melhor, o que vc quer fazer?
 Para definir seu perfil de investidor, digite /setProfile\n
 Para receber as melhore recomendacoes de hj, digite /today\n
 Para ajuda, digite /help\n

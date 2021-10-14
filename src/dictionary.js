@@ -10,12 +10,6 @@ class DictionaryController extends TelegramBaseController {
             oneTimeKeyboard: true,
             resizeKeyboard: true,
             layout:3,
-            'Perfil de Investidor': {
-                message: `O perfil de investidor é o resultado de uma análise das suas características em relação a investimentos, e principalmente ao risco envolvido.
-
-Simples de ser obtido através de algumas questões, o perfil de investidor serve para indicar a carteira de investimentos mais adequada para você.`
-                
-            },
             'Renda Fixa': {
                 message: `
                 A renda fixa é uma modalidade de investimento muito recomendada para investidores iniciantes ou que possuem perfis mais conservadores. Isso acontece porque ela combina segurança e bons rendimentos.
@@ -109,9 +103,15 @@ Seu objetivo é ganhar dinheiro na variação do preço de forma rápida baseado
                 `
                 
             },
+            'Perfil de Investidor': {
+                message: `O perfil de investidor é o resultado de uma análise das suas características em relação a investimentos, e principalmente ao risco envolvido.
 
-            'anyMatch': () => { //will be executed at any other message
-                $.sendMessage('Message')
+Simples de ser obtido através de algumas questões, o perfil de investidor serve para indicar a carteira de investimentos mais adequada para você.`
+                
+            },
+
+            'anyMatch': () => { 
+                $.sendMessage('Ops, nao entendi')
             }
         })
     }

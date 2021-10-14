@@ -18,7 +18,7 @@ class HelpController extends TelegramBaseController {
             },
             'Recomendações': () => {
                 oneTimeKeyboard: true,
-                $.sendMessage('Investimentos selecionados para voc6e pelo nosso time de especialistas!')
+                $.sendMessage('Investimentos selecionados para você pelo nosso time de especialistas!')
             },
             'Atendimento': () => {
                 oneTimeKeyboard: true,
