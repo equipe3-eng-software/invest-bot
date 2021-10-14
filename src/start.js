@@ -10,6 +10,8 @@ Para receber as melhore recomendacoes de hj, digite /today\n
 Para ajuda, digite /help\n
 Para conhecer os principais termos, digite /dictionary\n
 Para acessar os termos de uso, digite /terms\n
+
+Em breve: Open Banking, cotações diárias e mais!
         `
         $.sendMessage(message)
     }
