@@ -4,29 +4,14 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class StartController extends TelegramBaseController {
     startHandler($) {
-
-        $.runMenu({
-            message: 'Olá, eu sou o InvestBot, te ajudo a investir melhor, vamos começar?',
-            oneTimeKeyboard: true,
-
-                'Definir Perfil': () => {
-                    oneTimeKeyboard: true,
-                    $.sendMessage(`Definir`)
-                },
-                'Ver recomendações': () => {
-                    oneTimeKeyboard: true,
-                    $.sendMessage(`Start`)
-                },
-                'Ajuda': () => {
-                    oneTimeKeyboard: true,
-
-                    $.sendMessage('Ajuda!')
-                },
-                
-            'anyMatch': () => { 
-                $.sendMessage('What?')
-            }
-        })
+        let message = `Olá @, eu sou o InvestBot, te ajudo a investir melhor, o que vc quer fazer?
+Para definir seu perfil de investidor, digite /setProfile\n
+Para receber as melhore recomendacoes de hj, digite /today\n
+Para ajuda, digite /help\n
+Para conhecer os principais termos, digite /dictionary\n
+Para acessar os termos de uso, digite /terms\n
+        `
+        $.sendMessage(message)
     }
 
     get routes() {
