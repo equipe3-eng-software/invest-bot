@@ -29,7 +29,7 @@ class HelpController extends TelegramBaseController {
                 $.sendMessage('Nossos termos de uso estão disponíveis aqui: invest.bot/terms')
             },
             'anyMatch': () => { 
-                $.sendMessage('Message')
+                $.sendMessage('Desculpe, não entendi. Para ajuda /help')
             }
         })
 

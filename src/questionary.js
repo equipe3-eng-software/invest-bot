@@ -4,7 +4,7 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class QuestionaryController extends TelegramBaseController {
     questionaryHandler($) {
-        $.sendMessage('Ops, algo deu errado')
+        $.sendMessage('Ops, algo deu errado. Volte mais tarde')
 }
 
     get routes() {

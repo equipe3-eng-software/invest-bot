@@ -11,7 +11,7 @@ Para ajuda, digite /help\n
 Para conhecer os principais termos, digite /dictionary\n
 Para acessar os termos de uso, digite /terms\n
 
-Em breve: Open Banking, cotações diárias e mais!
+Em breve: Open Banking, avialiação de perfil e mais!
         `
         $.sendMessage(message)
     }

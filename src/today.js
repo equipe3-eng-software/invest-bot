@@ -6,11 +6,13 @@ class TodayController extends TelegramBaseController {
     todayHandler($) {
         
         let message = 'Investimentos do dia para vc:'
-        let message2 = 'XP - Fundo XPTO, rentabilidade 200% a.a, resgate 2 anos'
-        let message3 = 'HedgeFunds - Fundo ABC, rentabilidade 1200% a.a, resgate 22 anos'
+        let message2 = 'Multimermacdo Credito Privado, rentabilidade 7,4% a.a, resgate 10 dias'
+        let message3 = 'Credito Privado Renda Fixa, rentabilidade 14,72% a.a, resgate 7 dias'
+        let message4 = 'Inflação Americana Renda Fixa, rentabilidade 0,6% a.a, resgate 1 dias1'
         $.sendMessage(message)
         $.sendMessage(message2)
         $.sendMessage(message3)
+        $.sendMessage(message4)
     }
 
     get routes() {

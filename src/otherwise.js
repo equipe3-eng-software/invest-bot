@@ -4,7 +4,7 @@ const TelegramBaseController = Telegram.TelegramBaseController
 
 class OtherwiseController extends TelegramBaseController {
     handle($) {
-        $.sendMessage('Desculpe, eu não entendi :(')
+        $.sendMessage('Desculpe, eu não entendi. Para ajuda /help')
     }
 }
 
