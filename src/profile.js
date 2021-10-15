@@ -8,9 +8,12 @@ class ProfileController extends TelegramBaseController {
         $.runMenu({
             message: 'Selecione perfil:',
             oneTimeKeyboard: true,
+            resizeKeyboard: true,
             'Escolher': {
                 message: 'Hoje trabalhamos apenas com os perfis Moderado e conservador, ok?',
                 oneTimeKeyboard: true,
+                resizeKeyboard: true,
+
                 'Moderado': () => {
                     oneTimeKeyboard: true,
                     $.getUserSession('investProfile').then(investProfile => {
