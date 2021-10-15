@@ -10,7 +10,7 @@ class HelpController extends TelegramBaseController {
             oneTimeKeyboard: true,
             'Perfil': () => {
                 oneTimeKeyboard: true,
-                $.sendMessage(`perfil de inverstidor é...Voc6e pode verificar em... Voc6e pode alterar`)
+                $.sendMessage(`O perfil de investidor é o resultado de uma análise das suas características em relação a investimentos. Você pode alterar o seu em /setPerfil`)
             },
             'Notícias': () => {
                 oneTimeKeyboard: true,

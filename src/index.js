@@ -21,7 +21,7 @@ chatbot.router.when(new Telegram.TextCommand('/start', 'startCommand'), new Star
     .when(new Telegram.TextCommand('/today', 'todayCommand'), new TodayController())
     .when(new Telegram.TextCommand('/news', 'newsCommand'), new NewsController())
     .when(new Telegram.TextCommand('/dictionary', 'dictionaryCommand'), new DictionaryController())
-    .when(new Telegram.TextCommand('/questionary', 'questionaryCommand'), new QuestionaryController())
+    // .when(new Telegram.TextCommand('/questionary', 'questionaryCommand'), new QuestionaryController())
     .when(new Telegram.TextCommand('/help', 'helpCommand'), new HelpController())
     .when(new Telegram.TextCommand('/terms', 'termsCommand'), new HelpController())
     .when(new Telegram.TextCommand('/delete', 'deleteCommand'), new DeleteController())
