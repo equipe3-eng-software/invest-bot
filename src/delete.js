@@ -8,6 +8,7 @@ class DeleteController extends TelegramBaseController {
                 message: 'Proceder para deletar seus dados? Essa operação não pode ser desfeita:',
                 layout: 2,
                 oneTimeKeyboard: true,
+                resizeKeyboard: true,
                 'SIM': () => {
                     oneTimeKeyboard: true,
                     $.sendMessage(`Conta deletada!`)
