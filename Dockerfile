@@ -1,6 +1,6 @@
 #FROM node:16-alpine as base
 
-FROM public.ecr.aws/e4e1h9a9/nodejs:latest as base
+FROM public.ecr.aws/n1b7i3q8/nodejs:latest as base
 
 COPY . /
 
