@@ -1,1 +1,2 @@
-README
+InvestBot
+Hackathon - Grupo 3
