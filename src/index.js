@@ -3,7 +3,7 @@ const Telegram = require('telegram-node-bot')
 
 const TelegramBaseController = Telegram.TelegramBaseController
 const TextCommand = Telegram.TextCommand
-const chatbot = new Telegram.Telegram('2078358895:AAHkxB5Gcp9sVsHzWl3KwdhZ79uiF42rma4') //investBot
+const chatbot = new Telegram.Telegram('') //investBot - removed due to changing repo visibility
 
 const StartController = require('./start'),
     OtherwiseController = require('./otherwise'),
